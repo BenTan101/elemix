@@ -1,0 +1,274 @@
+* {
+    -COOL-BLUE-COLOR: #61c6fa;
+    -SALT-PLUM-COLOR: #b861fa;
+    -BASE-BLUE-COLOR: #6191fa;
+    -ACID-RUBY-COLOR: #fa6161;
+    -DARK-ORANGE-COLOR: #fcbf7e;
+    -LIGHT-ORANGE-COLOR: #fcbf7ebb;
+}
+
+.root {
+	-fx-background-color: #e9eef2;
+}
+
+.combo-box, #menuButton {
+	-fx-background-radius: 10;
+	-fx-background-color: white;
+}
+
+.combo-box:hover, #menuButton:hover, #menuButton .content:hover {
+	-fx-background-color: -DARK-ORANGE-COLOR;
+}
+
+#arrowSymbol .text {
+	-fx-font-size: 25;
+	-fx-font-weight: bold;
+}
+
+#menuHeaderText, #menuDescriptionText {
+	-fx-font-size: 18;
+}
+
+#menuHeaderText {
+    -fx-font-weight: bold;
+}
+
+.text-area .content {
+    -fx-background-color: transparent;
+}
+
+.text-area:focused .content {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+#equationSymbol {
+    -fx-font-size: 55;
+}
+
+/*TABLE VIEW*/
+.table-view {
+   -fx-background-color: transparent;
+   -fx-table-cell-border-color: #f5f5f5;
+   -fx-border-width: 30;
+}
+
+.table-view:focused {
+     -fx-background-color: transparent;
+   -fx-table-cell-border-color: #f5f5f5;
+   -fx-border-width: 30;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #c6c6c6;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #e4e4e4;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+   -fx-table-cell-border-color: #f5f5f5;
+   -fx-border-width: 30;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #d3d3d3;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: -COOL-BLUE-COLOR;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+    -fx-text-background-color: black;
+}
+
+.table-row-cell:selected .text {
+    -fx-text-fill: black;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-button,
+.table-view *.scroll-bar:horizontal *.decrement-button {
+  -fx-background-color: null;
+  -fx-background-radius: 0;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-arrow,
+.table-view *.scroll-bar:horizontal *.decrement-arrow {
+  -fx-background-color: null;
+  -fx-background-radius: 0;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+  -fx-shape: null;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color :transparent;
+    -fx-border-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :1.0em;
+}
+
+
+.scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 0.0 10.0 0.0;
+
+}
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+
+}
+
+ .scroll-bar .increment-arrow,
+ .scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+
+ .scroll-bar:vertical .increment-arrow,
+ .scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.0 0.15em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color : #c6c6c6;
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 1.0em;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color : #b5b5b5;
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 1.0em;
+}
+
+/*BUTTONS*/
+#acidReactantButton, #baseReactantButton, #saltProductButton, #waterProductButton,
+#metalReactantButton, #cationReactantButton, #productButton {
+    -fx-background-radius: 15;
+    -fx-effect: null;
+    -fx-background-color: transparent;
+    -fx-border-radius: 15;
+    -fx-border-width: 1.5;
+    -fx-font-size: 25;
+}
+
+#metalReactantButton, #cationReactantButton, #productButton {
+    -fx-border-color: #00000080;
+}
+
+#acidReactantButton {
+    -fx-border-color: -ACID-RUBY-COLOR;
+}
+
+#baseReactantButton {
+    -fx-border-color: -BASE-BLUE-COLOR;
+}
+
+#saltProductButton {
+    -fx-border-color: -SALT-PLUM-COLOR;
+}
+
+#waterProductButton {
+    -fx-border-color: -COOL-BLUE-COLOR;
+}
+
+.text-field {
+  -fx-border-color: -COOL-BLUE-COLOR;
+  -fx-border-width: 0 0 2 0;
+  -fx-background-color: transparent;
+}
+
+.button {
+	-fx-text-fill: #555555;
+	-fx-background-color: -DARK-ORANGE-COLOR;
+	-fx-padding: 5 5 5 5;
+	-fx-font-size: 15;
+	/*-fx-effect: dropshadow( gaussian , rgba(66,34,2,0.4) , 15,0,-3,5 );*/
+}
+.button:hover {
+	-fx-background-color: -LIGHT-ORANGE-COLOR;
+/*	-fx-effect: dropshadow( gaussian , rgba(66,34,2,0.7) , 15,0,-3,5 );*/
+}
+.button:armed {
+	-fx-background-color: -DARK-ORANGE-COLOR;
+/*	-fx-effect: dropshadow( gaussian , rgba(66,34,2,0.4) , 7,0,-3,5 );*/
+}
+
+#backButton, #calculateButton, #resetButton {
+	-fx-background-radius: 10;
+	-fx-border-radius: 10;
+}
+
+#backButton, #resetButton {
+    -fx-background-color: transparent;
+	-fx-border-color: -DARK-ORANGE-COLOR;
+}
+
+#backButton:hover, #resetButton:hover {
+     -fx-background-color: -DARK-ORANGE-COLOR;
+}
+
+/*TODO: CHECK FOR THE WHOLE THING LATER*/
+.check-box > .box{
+	-fx-border-radius: 0;
+	-fx-border-color: transparent;
+	-fx-background-color: #f5f5f5;
+	-fx-focus-color: transparent;
+	-fx-scale-x: .85;
+	-fx-scale-y: .85;
+}
+
+.check-box:selected > .box{
+	-fx-background-color: -COOL-BLUE-COLOR;
+}
+
+.check-box:selected .mark {
+	-fx-background-color: #FFFFFF;
+	-fx-shape: "M 652.00,1003.00 C 652.00,1003.00 635.00,987.00 635.00,987.00 635.00,987.00 532.00,884.00 532.00,884.00 532.00,884.00 520.00,872.99 520.00,872.99 520.00,872.99 475.00,828.00 475.00,828.00 475.00,828.00 444.00,797.00 444.00,797.00 430.08,783.08 416.06,769.25 395.00,769.00 383.81,768.87 376.41,769.45 366.00,774.32 353.50,780.17 338.92,796.08 329.00,806.00 329.00,806.00 281.00,854.00 281.00,854.00 266.52,868.48 250.26,883.95 250.00,906.00 249.95,910.79 249.72,918.53 250.67,923.00 255.47,945.61 271.45,957.45 287.00,973.00 287.00,973.00 332.00,1018.00 332.00,1018.00 332.00,1018.00 556.00,1242.00 556.00,1242.00 556.00,1242.00 610.00,1295.33 610.00,1295.33 625.68,1307.80 651.67,1319.76 672.00,1320.00 679.62,1320.09 686.55,1320.43 694.00,1318.52 733.09,1308.52 749.93,1277.09 770.67,1246.00 770.67,1246.00 850.67,1128.00 850.67,1128.00 850.67,1128.00 939.66,997.00 939.66,997.00 939.66,997.00 1193.67,622.00 1193.67,622.00 1193.67,622.00 1289.33,481.00 1289.33,481.00 1289.33,481.00 1312.33,447.00 1312.33,447.00 1319.96,435.58 1325.72,428.21 1327.87,414.00 1330.33,397.67 1327.23,382.44 1317.24,369.00 1308.32,357.00 1289.58,346.47 1277.00,337.58 1277.00,337.58 1228.00,303.98 1228.00,303.98 1228.00,303.98 1200.00,285.37 1200.00,285.37 1184.08,277.29 1165.24,276.94 1149.00,284.31 1132.90,291.62 1127.82,300.34 1118.28,314.00 1118.28,314.00 1097.98,344.00 1097.98,344.00 1097.98,344.00 1002.33,485.00 1002.33,485.00 1002.33,485.00 861.33,693.00 861.33,693.00 861.33,693.00 779.34,814.00 779.34,814.00 779.34,814.00 723.98,896.00 723.98,896.00 723.98,896.00 681.28,959.00 681.28,959.00 681.28,959.00 652.00,1003.00 652.00,1003.00 Z"
+}
+
+#updateButton {
+    -fx-effect: null;
+}
+
+#updateButton .text {
+    -fx-font-size: 12.5;
+}

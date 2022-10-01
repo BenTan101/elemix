@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MenuController">
+    <top>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="760.0" text="Elemix" textAlignment="RIGHT">
+                    <font>
+                        <Font size="45.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets bottom="10.0" left="45.0" right="45.0" />
+                    </padding>
+                </Label>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#openHelp" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 15;">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/BlackQnMarkIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#openInfo" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 15;">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/BlackInfoIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#openSettings" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 15;">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/BlackSettingsIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </HBox>
+            </children>
+            <opaqueInsets>
+                <Insets right="20.0" />
+            </opaqueInsets>
+        </HBox>
+    </top>
+    <padding>
+        <Insets bottom="15.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+    <center>
+        <VBox fx:id="menuVBx" alignment="CENTER_LEFT" prefHeight="452.0" prefWidth="890.0" spacing="20.0" BorderPane.alignment="CENTER">
+            <children>
+            <Button id="menuButton" fx:id="displacementButton" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#openDisplacementTab" prefHeight="125.0">
+               <graphic>
+                  <HBox id="menuButton" fx:id="displacementButtonHBox" alignment="CENTER_LEFT" prefHeight="90.0" prefWidth="791.0" spacing="25.0">
+                     <children>
+                        <Label id="menuHeaderText" fx:id="displacementHeader" alignment="CENTER" prefWidth="150.0" text="Displacement">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Text id="menuDescriptionText" fx:id="displacementDescriptionText" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A displacement reaction occurs when a more reactive metal 'displaces' a less reactive metal cation, according to their reactivity. This feature helps you visualise displacements easily." wrappingWidth="580.0" />
+                        <Label id="arrowSymbol" prefHeight="30.0" prefWidth="25.0" text="﹥" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button id="menuButton" fx:id="acidBaseButton" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#openAcidBaseTab" prefHeight="125.0" prefWidth="859.0">
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+               <graphic>
+                  <HBox id="menuButton" fx:id="acidBaseButtonHBox" alignment="CENTER_LEFT" prefHeight="90.0" prefWidth="10.0" spacing="25.0">
+                     <children>
+                        <Label id="menuHeaderText" fx:id="acidBaseHeader" alignment="CENTER" prefWidth="150.0" text="Acid-Base">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Text id="menuDescriptionText" fx:id="acidBaseDescriptionText" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acids and bases are common in our daily lives, from the hydrochloric acid in your stomach to the bleach used to clean clothes. See how acids and bases neutralise each other, forming salts." wrappingWidth="580.0" />
+                        <Label id="arrowSymbol" prefHeight="32.0" prefWidth="25.0" text="﹥" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+            </Button>
+            <Button id="menuButton" fx:id="myCompoundsButton" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#openMyCompoundsTab" prefHeight="125.0">
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+               <graphic>
+                  <HBox id="menuButton" fx:id="myCompoundsButtonHBox" alignment="CENTER_LEFT" prefHeight="90.0" prefWidth="10.0" spacing="25.0">
+                     <children>
+                        <Label id="menuHeaderText" fx:id="myCompoundsHeader" alignment="CENTER" prefHeight="16.0" prefWidth="150.0" text="My Compounds">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Text id="menuDescriptionText" fx:id="myCompoundsDescriptionText" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add your own compounds and give them properties. This will be very helpful when your Chemistry exam is nearing!" wrappingWidth="580.0" />
+                        <Label id="arrowSymbol" prefHeight="32.0" prefWidth="25.0" text="﹥" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+            </Button>
+            </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+         </padding>
+        </VBox>
+    </center>
+</BorderPane>
